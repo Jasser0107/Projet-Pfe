@@ -13,41 +13,26 @@ Follow these steps to set up the project:
 git clone https://github.com/Jasser0107/Projet-Pfe.git
 cd LEONI
 2️⃣ Install Dependencies
-bash
-Copier
-Modifier
 composer install
 npm install
 npm run dev
 3️⃣ Configure Environment
 Duplicate the .env.example file:
 
-bash
-Copier
-Modifier
 cp .env.example .env
 Then, open the .env file and update the database configuration:
 
-ini
-Copier
-Modifier
 DB_DATABASE=leoni
 DB_USERNAME=root
 DB_PASSWORD=
 4️⃣ Run Database Migrations
-bash
-Copier
-Modifier
+
 php artisan migrate
 5️⃣ Seed the Database (With Test Users)
-bash
-Copier
-Modifier
+
 php artisan migrate --seed
 6️⃣ Start the Server
-bash
-Copier
-Modifier
+
 php artisan serve
 Now, open localhost:8000 in your browser.
 
